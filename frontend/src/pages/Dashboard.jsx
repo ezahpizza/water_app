@@ -1,20 +1,8 @@
 import React, { useState } from 'react';
 import './dashboard.css';
 
-interface WaterQualityData {
-  ph: string;
-  hardness: string;
-  solids: string;
-  chloramines: string;
-  sulfate: string;
-  conductivity: string;
-  organicCarbon: string;
-  trihalomethanes: string;
-  turbidity: string;
-}
-
 const Dashboard = () => {
-  const [formData, setFormData] = useState<WaterQualityData>({
+  const [formData, setFormData] = useState({
     ph: '',
     hardness: '',
     solids: '',
@@ -26,7 +14,7 @@ const Dashboard = () => {
     turbidity: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -34,7 +22,7 @@ const Dashboard = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // TODO: Send data to your ML model
     console.log('Form data:', formData);

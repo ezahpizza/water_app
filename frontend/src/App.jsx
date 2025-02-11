@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-react';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Dashboard from './pages/Dashboard';
+import Home from './pages/Home.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 import { SignIn, SignUp } from './components/Auth';
 
 const clerkPubKey = "pk_test_bW92ZWQtb3Jpb2xlLTU4LmNsZXJrLmFjY291bnRzLmRldiQ";
