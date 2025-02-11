@@ -1,0 +1,17 @@
+.animate-background-color {
+  background-image: linear-gradient(to right, #3498db, #8e44ad);
+  background-size: 200% 100%;
+  animation: background-color-change 5s infinite;
+}
+
+@keyframes background-color-change {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
