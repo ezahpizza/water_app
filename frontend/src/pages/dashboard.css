@@ -1,0 +1,28 @@
+.animate-color-change {
+  background-image: linear-gradient(to right, #6840D9, #d50e89, rebeccapurple, #682999, rgb(160, 5, 160), #6840D9);
+  background-size: 600% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: color-change 10s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+  input[type="number"] {
+    background-color: #e5f0ff; /* light blue */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
