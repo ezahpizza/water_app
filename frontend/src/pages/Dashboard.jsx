@@ -95,6 +95,81 @@ const Dashboard = () => {
             />
           </div>
 
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+             Sulfate
+            </label>
+            <input
+              type="number"
+              name="sulfate"
+              value={formData.sulfate}
+              onChange={handleChange}
+              placeholder="Enter sulfate level"
+              className="w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Conductivity
+            </label>
+            <input
+              type="number"
+              name="conductivity"
+              value={formData.conductivity}
+              onChange={handleChange}
+              placeholder="Enter conductivity level"
+              className="w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Organic Carbon
+            </label>
+            <input
+              type="number"
+              name="organicCarbon"
+              value={formData.organicCarbon}
+              onChange={handleChange}
+              placeholder="Enter organicCarbon level"
+              className="w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Trihalomethanes
+            </label>
+            <input
+              type="number"
+              name="trihalomethanes"
+              value={formData.trihalomethanes}
+              onChange={handleChange}
+              placeholder="Enter trihalomethanes level"
+              className="w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Turbidity
+            </label>
+            <input
+              type="number"
+              name="Turbidity"
+              value={formData.turbidity}
+              onChange={handleChange}
+              placeholder="Enter Turbidity level"
+              className="w-full p-2 border rounded-md focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+
           {/* Add more input fields as needed */}
         </div>
 
