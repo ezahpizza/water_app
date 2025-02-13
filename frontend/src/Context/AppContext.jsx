@@ -7,7 +7,7 @@ const AppProvider = ({ children }) => {
 
 const backendUrl="http://localhost:3000/api/"
  
-//for /predictions
+
 const [predictons,setPredictions]=useState([]);
 const fetchPredictonData=async () => {
   const response=await axios.get(backendUrl+"/predictions");
