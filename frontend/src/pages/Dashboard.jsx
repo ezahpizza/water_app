@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './dashboard.css';
-
+import axios from "axios"
+import { AppContext } from '../Context/AppContext';
 const Dashboard = () => {
+  const {backendUrl}=useContext(AppContext);
   const [formData, setFormData] = useState({
     ph: '',
     hardness: '',
@@ -22,10 +24,11 @@ const Dashboard = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // TODO: Send data to your ML model
-    console.log('Form data:', formData);
+    const response= await axios.post(`${backendUrl}/precict`,formData);
+     data=response.data;
+     console.log(data);
   };
 
   return (
